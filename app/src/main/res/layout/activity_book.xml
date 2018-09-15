@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BookActivity">
+
+
+    <com.wanderingcan.persistentsearch.PersistentSearchView
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:hint="@string/search_hint"
+        app:hintAlwaysActive="true"
+        app:navSrc="@drawable/ic_arrow_back_black_24dp"
+        app:showMenu="true"
+        />
+
+    <!-- Layout for a list of earthquakes -->
+    <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/search_bar"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:divider="@null"
+        android:dividerHeight="20dp"
+        android:orientation="vertical"
+        />
+    <!-- the last 2 lines of codes below hides the list divider -->
+
+    <TextView
+        android:id="@+id/emptyView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="" />
+
+    <ProgressBar
+        android:id="@+id/loading_spinner"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+
+
+
+
+</RelativeLayout>

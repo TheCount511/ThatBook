@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">That Book</string>
+    <string name="search_hint">Enter a book reference to search</string>
+    <string name="speak_now">Say a word</string>
+    <string name="emptyArray">No Books were found on this topic</string>
+    <string name="title_placeholder">The fault in our stars</string>
+    <string name="language_placeholder">en</string>
+    <string name="authors_placeholder">John Green</string>
+    <string name="no_connection">please check your internet connection and try again</string>
+    <string name="empty_search">please enter a keyword</string>
+    <string name="by">By </string>
+</resources>
